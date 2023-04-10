@@ -23,8 +23,8 @@ eng_to_rus = {v: k for k, v in rus_to_eng.items()}
 
 def transliterate(text, dictionary):
     result = []
-    for char in text:
-        result.append(dictionary.get(char, char))
+    for ch in text:
+        result.append(dictionary.get(ch, ch))
     return ''.join(result)
 
 
